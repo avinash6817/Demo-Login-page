@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login form 3</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        .form__container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 3rem 0;
+            border-radius: 15px;
+            box-shadow: 2px 2px 5px #0000003d, -2px -2px 5px #0000003d;
+        }
+
+        .form__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25%;
+            width: 25%;
+            border: 1px solid black;
+            border-radius: 50%;
+            background: #202091;
+            color: #fff;
+        }
+
+        .form__logo .fa-user {
+            font-size: 4rem;
+        }
+
+        .form__heading {
+            font-size: 2rem;
+            color: #202091;
+
+        }
+
+        .form__input {
+            width: 90%;
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form__input input {
+            height: 35px;
+            border: none;
+            background: rgba(182, 166, 166, 0.233);
+            padding-left: 10px;
+            outline: none;
+        }
+
+        .form__link {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
+
+        .form__link .form__link_1 {
+            color: #202091;
+        }
+
+        .form__link .form__link_2 a {
+            text-decoration: none;
+            color: #202091;
+        }
+
+        .form__bottom {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form__bottom .btn {
+            position: absolute;
+            bottom: -18px;
+            width: 80%;
+            height: 40px;
+            background: #202091;
+            color: #fff;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="form__container">
+        <div class="form__logo">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="form__heading">Have an account?</div>
+        <div class="form__input">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="form__link">
+            <div class="form__link_1">
+                <input type="checkbox" class="checkbox">Remember me
+            </div>
+            <div class="form__link_2"><a href="#">Forgot Password</a></div>
+        </div>
+        <div class="form__bottom">
+            <button class="btn">Get Strated</button>
+        </div>
+    </section>
+
+</body>
+
+</html>
